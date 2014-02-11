@@ -1,0 +1,84 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity" >
+
+    <Button
+        android:id="@+id/makeToast"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="32dp"
+        android:text="Make Toast" />
+
+    <Spinner
+        android:id="@+id/durationSpinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true" />
+
+    <EditText
+        android:id="@+id/xOffsetEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/yOffsetEditText"
+        android:layout_toRightOf="@+id/makeToast"
+        android:inputType="number"
+        android:hint="Offset X"
+        android:ems="10" />
+
+    <EditText
+        android:id="@+id/yOffsetEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/durationSpinner"
+        android:layout_marginTop="18dp"
+        android:layout_toLeftOf="@+id/makeToast"
+        android:inputType="number"
+        android:ems="10"
+        android:hint="Offset Y" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/toastText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/makeToast"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="12dp"
+        android:ems="10"
+        android:hint="Testo del toast" />
+
+    <TextView
+        android:id="@+id/textPosizione"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="Scegli la posizione relativa e la durata del Toast" />
+
+    <Spinner
+        android:id="@+id/spinnerPosition1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/spinnerPosition2"
+        android:layout_below="@+id/textPosizione"
+        android:layout_marginTop="27dp" />
+
+    <Spinner
+        android:id="@+id/spinnerPosition2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/durationSpinner"
+        android:layout_below="@+id/spinnerPosition1" />
+
+</RelativeLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">ToastGravity</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+        <string-array name="positions">
+        <item>Left</item>
+        <item>Right</item>
+        <item>Top</item>
+        <item>Bottom</item>
+        <item>Center</item>
+    </string-array>
+    <string-array name="duration">
+        <item>Long</item>
+        <item>Short</item>
+    </string-array>
+</resources>
